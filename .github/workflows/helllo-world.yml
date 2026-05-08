@@ -1,0 +1,20 @@
+name: GitHub Actions PoC
+
+# 1. The Event (Trigger)
+on: [push]
+
+# 2. The Jobs (What to do)
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest # The operating system of the runner
+    steps:
+      - name: Check out respository code
+        uses: actions/checkout@v4 # This copies your code onto the runner
+
+      - name: List files in the repository
+        run: |
+          echo "The runner is now looking at your files:"
+          ls -R
+
+      - name: Run a custom script
+        run: echo "Hello! The PoC is running successfully on a GitHub-hosted server."
