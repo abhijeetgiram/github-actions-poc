@@ -10,6 +10,8 @@ GitHub Actions is just a way to tell GitHub: "When X happens, run these specific
 
 The goal of this PoC is to understand the core components of CI/CD (Continuous Integration / Continuous Deployment) by triggering automated tasks on every code push.
 
+**Quick Link:** [View Live Execution Logs](https://github.com/abhijeetgiram/github-actions-poc/actions)
+
 ## Repository Structure
 
 ```text
